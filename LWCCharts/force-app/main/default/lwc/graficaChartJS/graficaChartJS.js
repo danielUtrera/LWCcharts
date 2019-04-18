@@ -1,10 +1,10 @@
 /* eslint-disable vars-on-top */
 
-import { LightningElement,track,api,wire } from 'lwc';
+import { LightningElement,track,api } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { loadScript, loadStyle } from 'lightning/platformResourceLoader';
 import chartJS from '@salesforce/resourceUrl/chartJS';
-import dashboardQuery from '@salesforce/apex/DisputaPaypalController.dashboardQuery';
+import dashboardQuery from '@salesforce/apex/ChartsController.dashboardQuery';
 
 export default class graficaChartJS extends LightningElement {
     @api tituloGrafica='Titulo';
